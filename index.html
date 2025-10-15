@@ -87,32 +87,6 @@
             width: 3rem;
             height: 3rem;
         }
-        .btn {
-            background-color: #20E2C8;
-            color: #231372;
-            font-family: 'Barlow', sans-serif;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #19b3a0;
-        }
-        .quiz-option {
-            border: 2px solid #E0E0E0;
-            transition: all 0.2s ease-in-out;
-        }
-        .quiz-option:hover {
-            border-color: #20E2C8;
-            background-color: #F0FFFF;
-        }
-        .quiz-option.correct {
-            border-color: #20E2C8;
-            background-color: #E6FFFA;
-        }
-        .quiz-option.incorrect {
-            border-color: #FF5252;
-            background-color: #FFF1F1;
-        }
     </style>
 </head>
 <body>
@@ -189,10 +163,9 @@
 
         <nav class="flex flex-wrap justify-center items-center border-b border-gray-200 mb-12">
             <a class="nav-link font-semibold px-4 py-3 active" data-page="roadmap">Roadmap</a>
-            <a class="nav-link font-semibold px-4 py-3" data-page="knowledge">Test Your Knowledge</a>
-            <a class="nav-link font-semibold px-4 py-3" data-page="brand">Brand Kit</a>
             <a class="nav-link font-semibold px-4 py-3" data-page="competition">Competition</a>
             <a class="nav-link font-semibold px-4 py-3" data-page="metrics">KPIs</a>
+            <a class="nav-link font-semibold px-4 py-3" data-page="brand">Brand Kit</a>
         </nav>
 
         <main id="page-content">
@@ -250,71 +223,6 @@
                                     <li class="flex items-start"><svg class="icon mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg><span>Sharing of a final report with success metrics.</span></li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="page-knowledge" class="page hidden">
-                <div class="max-w-3xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold mb-2">Test Your Knowledge</h2>
-                    <p class="mb-8">See how prepared you are to lead the growth in 2026!</p>
-                    <div id="quiz-container" class="card p-6 md:p-8 rounded-lg text-left"></div>
-                </div>
-            </section>
-
-            <section id="page-brand" class="page hidden">
-                <div class="max-w-4xl mx-auto">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl font-bold">Campaign Brand Kit</h2>
-                        <p class="mt-2">Core messaging and visual identity for "The Q1 Ignition 2026".</p>
-                    </div>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="space-y-8">
-                            <div class="card p-6 rounded-lg">
-                                <h3 class="font-bold text-xl mb-3">Slogans & Keywords</h3>
-                                <p class="font-semibold">Main Slogan:</p>
-                                <p class="text-2xl font-bold mb-4" style="color: #231372;">"The Q1 Ignition: <span class="highlight">Trade to the Top.</span>"</p>
-                                <p class="font-semibold">Secondary Slogans:</p>
-                                <p class="mb-4">"Climb the Leaderboard," "Performance is Power," "Q1 is for Winners."</p>
-                                <p class="font-semibold mb-2">Keywords:</p>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="tag text-xs font-semibold py-1 px-3 rounded-full">Performance</span>
-                                    <span class="tag text-xs font-semibold py-1 px-3 rounded-full">FTDs</span>
-                                    <span class="tag text-xs font-semibold py-1 px-3 rounded-full">Revenue</span>
-                                    <span class="tag text-xs font-semibold py-1 px-3 rounded-full">Competition</span>
-                                    <span class="tag text-xs font-semibold py-1 px-3 rounded-full">Strategy</span>
-                                    <span class="tag text-xs font-semibold py-1 px-3 rounded-full">FX Pro</span>
-                                </div>
-                            </div>
-                             <div class="card p-6 rounded-lg">
-                                <h3 class="font-bold text-xl mb-3">Visual Identity</h3>
-                                <p class="mb-4">A sleek, futuristic aesthetic that combines elements of technology and exploration with clean data graphics, symbolizing a new beginning.</p>
-                                <p class="font-semibold mb-2">Color Palette:</p>
-                                <div class="flex space-x-4">
-                                    <div class="text-center"><div class="w-12 h-12 rounded-full border-2" style="background-color: #231372;"></div><span class="text-xs">Dark Blue</span></div>
-                                    <div class="text-center"><div class="w-12 h-12 rounded-full" style="background-color: #20E2C8;"></div><span class="text-xs">Turquoise</span></div>
-                                    <div class="text-center"><div class="w-12 h-12 rounded-full" style="background-color: #6106AF;"></div><span class="text-xs">Purple</span></div>
-                                    <div class="text-center"><div class="w-12 h-12 rounded-full border-2" style="background-color: #24282A;"></div><span class="text-xs">Gray</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card p-6 rounded-lg">
-                             <h3 class="font-bold text-xl mb-4">Tone of Voice</h3>
-                             <div class="space-y-4">
-                                 <div>
-                                     <h4 class="font-semibold highlight">Competitive</h4>
-                                     <p class="text-sm">Using action-oriented language ("drive," "win," "climb"), celebrating achievements, and fostering a high-performance environment.</p>
-                                 </div>
-                                 <div>
-                                     <h4 class="font-semibold highlight">Collaborative</h4>
-                                     <p class="text-sm">Using inclusive language ("we," "our team"), celebrating shared knowledge, and promoting a unified team effort towards a common goal.</p>
-                                 </div>
-                                 <div>
-                                     <h4 class="font-semibold highlight">Strategic</h4>
-                                     <p class="text-sm">Communicating with a clear understanding of business objectives and using precise language to build trust and alignment.</p>
-                                 </div>
-                             </div>
                         </div>
                     </div>
                 </div>
@@ -389,6 +297,63 @@
                     </div>
                 </div>
             </section>
+            
+            <section id="page-brand" class="page hidden">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold">Campaign Brand Kit</h2>
+                        <p class="mt-2">Core messaging and visual identity for "The Q1 Ignition 2026".</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-8">
+                            <div class="card p-6 rounded-lg">
+                                <h3 class="font-bold text-xl mb-3">Slogans & Keywords</h3>
+                                <p class="font-semibold">Main Slogan:</p>
+                                <p class="text-2xl font-bold mb-4" style="color: #231372;">"The Q1 Ignition: <span class="highlight">Trade to the Top.</span>"</p>
+                                <p class="font-semibold">Secondary Slogans:</p>
+                                <p class="mb-4">"Climb the Leaderboard," "Performance is Power," "Q1 is for Winners."</p>
+                                <p class="font-semibold mb-2">Keywords:</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="tag text-xs font-semibold py-1 px-3 rounded-full">Performance</span>
+                                    <span class="tag text-xs font-semibold py-1 px-3 rounded-full">FTDs</span>
+                                    <span class="tag text-xs font-semibold py-1 px-3 rounded-full">Revenue</span>
+                                    <span class="tag text-xs font-semibold py-1 px-3 rounded-full">Competition</span>
+                                    <span class="tag text-xs font-semibold py-1 px-3 rounded-full">Strategy</span>
+                                    <span class="tag text-xs font-semibold py-1 px-3 rounded-full">FX Pro</span>
+                                </div>
+                            </div>
+                             <div class="card p-6 rounded-lg">
+                                <h3 class="font-bold text-xl mb-3">Visual Identity</h3>
+                                <p class="mb-4">A sleek, futuristic aesthetic that combines elements of technology and exploration with clean data graphics, symbolizing a new beginning.</p>
+                                <p class="font-semibold mb-2">Color Palette:</p>
+                                <div class="flex space-x-4">
+                                    <div class="text-center"><div class="w-12 h-12 rounded-full border-2" style="background-color: #231372;"></div><span class="text-xs">Dark Blue</span></div>
+                                    <div class="text-center"><div class="w-12 h-12 rounded-full" style="background-color: #20E2C8;"></div><span class="text-xs">Turquoise</span></div>
+                                    <div class="text-center"><div class="w-12 h-12 rounded-full" style="background-color: #6106AF;"></div><span class="text-xs">Purple</span></div>
+                                    <div class="text-center"><div class="w-12 h-12 rounded-full border-2" style="background-color: #24282A;"></div><span class="text-xs">Gray</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-6 rounded-lg">
+                             <h3 class="font-bold text-xl mb-4">Tone of Voice</h3>
+                             <div class="space-y-4">
+                                 <div>
+                                     <h4 class="font-semibold highlight">Competitive</h4>
+                                     <p class="text-sm">Using action-oriented language ("drive," "win," "climb"), celebrating achievements, and fostering a high-performance environment.</p>
+                                 </div>
+                                 <div>
+                                     <h4 class="font-semibold highlight">Collaborative</h4>
+                                     <p class="text-sm">Using inclusive language ("we," "our team"), celebrating shared knowledge, and promoting a unified team effort towards a common goal.</p>
+                                 </div>
+                                 <div>
+                                     <h4 class="font-semibold highlight">Strategic</h4>
+                                     <p class="text-sm">Communicating with a clear understanding of business objectives and using precise language to build trust and alignment.</p>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
 
@@ -415,81 +380,6 @@
                 showPage(targetPageId);
             });
         });
-
-        const quizContainer = document.getElementById('quiz-container');
-        const questions = [
-            { module: 1, question: "What does 'TAM' mean in the context of market analysis?", answers: ["Total Addressable Market", "Target Audience Metric", "Technical Analysis Model", "Team Alignment Meeting"], correct: 0 },
-            { module: 1, question: "Which of these methods is most effective for validating 'Product-Market Fit' in a new vertical?", answers: ["Launching a large marketing campaign", "Creating an MVP (Minimum Viable Product) and testing with a pilot group", "Copying the main competitor", "Drastically lowering prices"], correct: 1 },
-            { module: 2, question: "What is the main benefit of using AI for creative optimization in marketing campaigns?", answers: ["Completely replacing designers", "It only works for text", "Analyzing data at scale to predict which image/text combinations will perform best", "Creating logos automatically"], correct: 2 },
-            { module: 2, question: "Predictive Analysis in marketing is primarily used to:", answers: ["Report on last week's results", "Anticipate future consumer trends and customer behavior", "Create satisfaction surveys", "Only for social media analysis"], correct: 1 },
-            { module: 3, question: "What is the definition of a KPI (Key Performance Indicator)?", answers: ["Any metric that can be measured", "A metric that shows the number of 'likes'", "A quantifiable measure that demonstrates how effectively a company is achieving its key business objectives", "A weekly performance report"], correct: 2 },
-            { module: 3, question: "In an expansion strategy, what does the term 'Go-to-Market' (GTM) mean?", answers: ["The name of the first campaign", "An action plan that details how an organization will reach target customers and achieve competitive advantage", "The marketing budget", "Only the sales team"], correct: 1 }
-        ];
-
-        let currentQuestionIndex = 0;
-        let score = 0;
-
-        function showQuestion(index) {
-            if (!quizContainer) return;
-            const questionData = questions[index];
-            quizContainer.innerHTML = `
-                <p class="text-sm font-semibold mb-2" style="color:#6106AF;">MODULE ${questionData.module} / QUESTION ${index + 1} OF ${questions.length}</p>
-                <h4 class="text-xl font-bold mb-6">${questionData.question}</h4>
-                <div id="quiz-options" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    ${questionData.answers.map((answer, i) => `<button class="quiz-option p-4 rounded-lg text-left w-full" data-index="${i}">${answer}</button>`).join('')}
-                </div>
-                <div id="feedback-container" class="mt-6"></div>
-            `;
-            document.querySelectorAll('.quiz-option').forEach(button => {
-                button.addEventListener('click', handleAnswer);
-            });
-        }
-
-        function handleAnswer(e) {
-            const selectedIndex = parseInt(e.currentTarget.dataset.index);
-            const correctIndex = questions[currentQuestionIndex].correct;
-            const options = document.querySelectorAll('.quiz-option');
-            const feedbackContainer = document.getElementById('feedback-container');
-            options.forEach(opt => opt.disabled = true);
-            if (selectedIndex === correctIndex) {
-                score++;
-                e.currentTarget.classList.add('correct');
-                feedbackContainer.innerHTML = '<p class="font-bold" style="color: #16a34a;">Correct!</p>';
-            } else {
-                e.currentTarget.classList.add('incorrect');
-                options[correctIndex].classList.add('correct');
-                feedbackContainer.innerHTML = '<p class="font-bold" style="color: #ef4444;">Not quite... The correct answer is highlighted.</p>';
-            }
-            feedbackContainer.innerHTML += `
-                <button id="next-question" class="btn py-2 px-6 rounded-lg mt-4">
-                    ${currentQuestionIndex < questions.length - 1 ? 'Next Question' : 'See Results'}
-                </button>`;
-            document.getElementById('next-question').addEventListener('click', () => {
-                currentQuestionIndex++;
-                if (currentQuestionIndex < questions.length) {
-                    showQuestion(currentQuestionIndex);
-                } else {
-                    showResults();
-                }
-            });
-        }
-
-        function showResults() {
-            quizContainer.innerHTML = `
-                <h3 class="text-2xl font-bold mb-4">Quiz Complete!</h3>
-                <p class="text-lg mb-2">Your final score is:</p>
-                <p class="text-5xl font-bold highlight mb-6">${score} / ${questions.length}</p>
-                <button id="restart-quiz" class="btn py-2 px-6 rounded-lg">Try Again</button>`;
-            document.getElementById('restart-quiz').addEventListener('click', () => {
-                currentQuestionIndex = 0;
-                score = 0;
-                showQuestion(currentQuestionIndex);
-            });
-        }
-
-        if(quizContainer) {
-            showQuestion(currentQuestionIndex);
-        }
     });
 </script>
 
